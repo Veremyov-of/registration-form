@@ -1,9 +1,14 @@
 .container {
-    margin: 150px auto;
-    width: 350px;
+    margin-top: 10px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .form {
-        max-width: 350px;
-        height: 600px;
+        margin: 0 auto;
+        width: 350px;
+        height: 620px;
         border-radius: 15px;
         background: linear-gradient(160.2deg, #FFF38A 0%, #FFB26A 100%);
         display: flex;
