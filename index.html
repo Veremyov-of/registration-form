@@ -14,31 +14,32 @@
                 <h1 class="form_title">Sing Up</h1>
                 <div class="form_item">
                     <label class="form_item_label">Email</label>
-                    <input required type="email">
+                    <input id="inputEmail" required  type="email">
                 </div>
                 <div class="form_item">
                     <label class="form_item_label">User Name</label>
-                    <input required type="text">
+                    <input id="inputUserName" title="minimum number of characters: 3" required type="text">
                 </div>
                 <div class="form_item">
                     <label class="form_item_label">Name</label>
-                    <input required type="text">
+                    <input id="inputName" required title="minimum number of characters: 3" type="text">
                 </div>
                 <div class="form_item">
                     <label class="form_item_label">Password</label>
-                    <input minlength="8" required type="password">
+                    <input id="inputPassword" title="minimum number of characters: 8" required type="password">
                 </div>
                 <div class="form_item">
                     <label class="form_item_label">Confirm Password</label>
-                    <input minlength="8" required type="password">
+                    <input id="inputConfirmPassword" required type="password">
                 </div>
                 <div class="form_checkbox">
-                    <input id="accept" type="checkbox">
-                    <label class="form_checkbox_label" for="accept">I accept the Terms of Use and Privacy Policy</label>
+                    <input id="inputCheckbox" required type="checkbox">
+                    <label class="form_checkbox_label" for="inputCheckbox">I accept the Terms of Use and Privacy Policy</label>
                 </div>
                 <button class="btn" type="submit">Sing Up</button>
             </form>
         </div>
     </section>
+    <script src="./js/main.js"></script>
 </body>
 </html>

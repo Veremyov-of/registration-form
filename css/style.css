@@ -58,9 +58,10 @@ body {
 
 .container .form_item input {
   outline: none;
-  width: 280px;
+  width: 270px;
   height: 30px;
-  border: none;
+  border: 2px solid white;
+  padding: 0px 10px;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.05em;
@@ -78,63 +79,6 @@ body {
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.03em;
-}
-
-.container .form_checkbox input[type="checkbox"]:checked,
-.container .form_checkbox input[type="checkbox"]:not(:checked) {
-  position: absolute;
-  left: -9999px;
-}
-
-.container .form_checkbox input[type="checkbox"]:checked + label,
-.container .form_checkbox input[type="checkbox"]:not(:checked) + label {
-  display: inline-block;
-  position: relative;
-  padding-left: 28px;
-  line-height: 20px;
-  cursor: pointer;
-}
-
-.container .form_checkbox input[type="checkbox"]:checked + label:before,
-.container .form_checkbox input[type="checkbox"]:not(:checked) + label:before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 18px;
-  height: 18px;
-  border: 1px solid #dddddd;
-  background-color: #ffffff;
-  border-radius: 5px;
-}
-
-.container .form_checkbox input[type="checkbox"]:checked + label:after,
-.container .form_checkbox input[type="checkbox"]:not(:checked) + label:after {
-  content: "";
-  position: absolute;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-.container .form_checkbox input[type="checkbox"]:checked + label:after,
-.container .form_checkbox input[type="checkbox"]:not(:checked) + label:after {
-  left: 3px;
-  top: 4px;
-  width: 10px;
-  height: 5px;
-  border-radius: 1px;
-  border-left: 4px solid #212121;
-  border-bottom: 4px solid #212121;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-.container .form_checkbox input[type="checkbox"]:not(:checked) + label:after {
-  opacity: 0;
-}
-
-.container .form_checkbox input[type="checkbox"]:checked + label:after {
-  opacity: 1;
 }
 
 .container .form .btn {
