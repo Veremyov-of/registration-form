@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration-form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <form class="form">
+                <h1 class="form_title">Sing Up</h1>
+                <div class="form_item">
+                    <label class="form_item_label">Email</label>
+                    <input required type="email">
+                </div>
+                <div class="form_item">
+                    <label class="form_item_label">User Name</label>
+                    <input required type="text">
+                </div>
+                <div class="form_item">
+                    <label class="form_item_label">Name</label>
+                    <input required type="text">
+                </div>
+                <div class="form_item">
+                    <label class="form_item_label">Password</label>
+                    <input minlength="8" required type="password">
+                </div>
+                <div class="form_item">
+                    <label class="form_item_label">Confirm Password</label>
+                    <input minlength="8" required type="password">
+                </div>
+                <div class="form_checkbox">
+                    <input id="accept" type="checkbox">
+                    <label class="form_checkbox_label" for="accept">I accept the Terms of Use and Privacy Policy</label>
+                </div>
+                <button class="btn" type="submit">Sing Up</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
