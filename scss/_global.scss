@@ -1,7 +1,11 @@
 body {
-    background-color: #FEFFBF;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(180deg, #91FF8E 0%, #6CF6FF 100%);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
     box-sizing: border-box;
-    color: #212121;
+    color: #414141;
 }
 * {
     margin: 0;

@@ -5,40 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>registration-form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <section>
-        <div class="container">
             <form class="form" action="#">
                 <h1 class="form_title">Sing Up</h1>
-                <div class="form_item">
-                    <label class="form_item_label">Email</label>
-                    <input id="inputEmail" required  type="email">
-                </div>
-                <div class="form_item">
-                    <label class="form_item_label">User Name</label>
-                    <input id="inputUserName" title="minimum number of characters: 3" required type="text">
-                </div>
-                <div class="form_item">
-                    <label class="form_item_label">Name</label>
-                    <input id="inputName" required title="minimum number of characters: 3" type="text">
-                </div>
-                <div class="form_item">
-                    <label class="form_item_label">Password</label>
-                    <input id="inputPassword" title="minimum number of characters: 8" required type="password">
-                </div>
-                <div class="form_item">
-                    <label class="form_item_label">Confirm Password</label>
-                    <input id="inputConfirmPassword" required type="password">
-                </div>
+                <input id="inputEmail" class="form_input" placeholder="Email" required  type="email">
+                <input id="inputUserName" class="form_input" placeholder="User Name" required type="text">
+                <input id="inputName" class="form_input" placeholder="Name" required type="text">
+                <input id="inputPassword" class="form_input" placeholder="Password" required type="password">
+                <input id="inputConfirmPassword" class="form_input" placeholder="Confirm Password" required type="password">
                 <div class="form_checkbox">
                     <input id="inputCheckbox" required type="checkbox">
                     <label class="form_checkbox_label" for="inputCheckbox">I accept the Terms of Use and Privacy Policy</label>
                 </div>
                 <button class="btn" type="submit">Sing Up</button>
             </form>
-        </div>
     </section>
     <script src="./js/main.js"></script>
 </body>

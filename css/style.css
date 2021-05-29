@@ -1,8 +1,13 @@
 body {
-  background-color: #FEFFBF;
+  font-family: 'Roboto', sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#91FF8E), to(#6CF6FF));
+  background: linear-gradient(180deg, #91FF8E 0%, #6CF6FF 100%);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #212121;
+  color: #414141;
 }
 
 * {
@@ -10,27 +15,21 @@ body {
   padding: 0;
 }
 
-.container {
-  margin-top: 10px;
-  width: 100%;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 320px;
+  height: 500px;
+  background: white;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
 }
 
-.container .form {
-  margin: 0 auto;
-  width: 350px;
-  height: 620px;
-  border-radius: 15px;
-  background: linear-gradient(160.2deg, #FFF38A 0%, #FFB26A 100%);
+section .form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,71 +42,91 @@ body {
           flex-direction: column;
 }
 
-.container .form_title {
-  width: 260px;
-  height: 40px;
+section .form_title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 15px 0 0;
-  font-weight: 500;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 260px;
+  height: 90px;
+  margin: 20px 0 15px;
+  background-image: url("../img/img.png");
+  background-repeat: no-repeat;
+  background-position: center;
   font-size: 30px;
+  font-weight: 500;
+  color: white;
   letter-spacing: 0.04em;
 }
 
-.container .form_item_label {
-  margin: 20px 0px 0px;
+section .form_input {
+  margin-top: 25px;
   display: block;
-  font-size: 22px;
-}
-
-.container .form_item input {
+  position: relative;
+  width: 280px;
+  height: 25px;
+  border: none;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(90deg, #91FF8E 0%, #6CF6FF 100%);
   outline: none;
-  width: 270px;
-  height: 30px;
-  border: 2px solid white;
-  padding: 0px 10px;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  border-radius: 5px;
-  margin: 5px 0px 0px;
 }
 
-.container .form_checkbox {
-  margin: 20px 0px 0px;
+section .form_checkbox {
+  margin-top: 20px;
   width: 280px;
   height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.container .form_checkbox_label {
-  font-size: 15px;
-  font-weight: 500;
-  letter-spacing: 0.03em;
+section .form_checkbox_label {
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
 }
 
-.container .form .btn {
+section .form .btn {
+  position: relative;
+  margin-top: 20px;
   width: 150px;
   height: 40px;
-  font-size: 20px;
-  font-weight: 400;
-  margin: 30px 0px 0px;
-  background: #77FF9D;
-  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(17.19%, #91FF8E), to(#6CF6FF));
+  background: linear-gradient(90deg, #91FF8E 17.19%, #6CF6FF 100%);
+  border-radius: 5px;
   border: none;
-  -webkit-transition: background .2s;
-  transition: background .2s;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  -webkit-transition: color .1s;
+  transition: color .1s;
+  -webkit-transition: width .1s;
+  transition: width .1s;
 }
 
-.container .form .btn:hover {
-  background: #69f892;
-  -webkit-transition: .2s;
-  transition: .2s;
+section .form .btn:hover {
+  width: 155px;
+  -webkit-transition: color .1s;
+  transition: color .1s;
+}
+
+section .form .incorrect {
+  border-image-source: linear-gradient(90deg, #FF8E8E 0%, #FFF06C 100%);
 }
 /*# sourceMappingURL=style.css.map */
