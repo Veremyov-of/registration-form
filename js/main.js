@@ -1,10 +1,10 @@
-let email = document.querySelector("#inputEmail");
-let userName = document.querySelector("#inputUserName");
-let name = document.querySelector("#inputName");
-let password = document.querySelector("#inputPassword");
-let confirmPassword = document.querySelector("#inputConfirmPassword");
-let checkbox = document.querySelector("#inputCheckbox");
-let btnSingUp = document.querySelector(".btn");
+let email = document.getElementById("inputEmail");
+let userName = document.getElementById("inputUserName");
+let name = document.getElementById("inputName");
+let password = document.getElementById("inputPassword");
+let confirmPassword = document.getElementById("inputConfirmPassword");
+let checkbox = document.getElementById("inputCheckbox");
+let btnSingUp = document.getElementsByClassName("btn");
 
 email.addEventListener('keyup', checkEmail);
 userName.addEventListener('keyup', checkUserName);
